@@ -41,7 +41,7 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200">
+    <header className="bg-black text-white">
       <nav
         className="container flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"
@@ -54,15 +54,14 @@ const Header = () => {
             title={`${config.appName} homepage`}
           >
             <Image
-              src={logo}
+              src="/logoAndName.png"
               alt={`${config.appName} logo`}
-              className="w-8"
-              placeholder="blur"
+              
               priority={true}
-              width={32}
+              width={160}
               height={32}
             />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+            {/* <span className="font-extrabold text-lg">{config.appName}</span> */}
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -78,7 +77,7 @@ const Header = () => {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="currentColor"
+              stroke="white"
               className="w-6 h-6 text-base-content"
             >
               <path
@@ -111,7 +110,7 @@ const Header = () => {
       {/* Mobile menu, show/hide based on menu state. */}
       <div className={`relative z-50 ${isOpen ? "" : "hidden"}`}>
         <div
-          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-4 overflow-y-auto bg-base-200 sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
+          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-4 overflow-y-auto bg-black text-white sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
         >
           {/* Your logo/name on small screens */}
           <div className="flex items-center justify-between">
@@ -120,16 +119,14 @@ const Header = () => {
               title={`${config.appName} homepage`}
               href="/"
             >
-              <Image
-                src={logo}
+            <Image
+                src="/logoAndName.png"
                 alt={`${config.appName} logo`}
-                className="w-8"
-                placeholder="blur"
                 priority={true}
-                width={32}
+                width={160}
                 height={32}
               />
-              <span className="font-extrabold text-lg">{config.appName}</span>
+              {/* <span className="font-extrabold text-lg">{config.appName}</span> */}
             </Link>
             <button
               type="button"

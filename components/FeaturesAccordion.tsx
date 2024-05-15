@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import type { JSX } from "react";
 import Image from "next/image";
+import writerHero2 from "@/app/writer-hero-2.jpg";
 
 interface Feature {
   title: string;
@@ -23,9 +24,9 @@ interface Feature {
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Emails",
+    title: "Guided Writing",
     description:
-      "Send transactional emails, setup your DNS to avoid spam folder (DKIM, DMARC, SPF in subdomain), and listen to webhook to receive & forward emails",
+      "Our app, using AI, will guide you through the process of writing your first draft, from the first word to the last punctuation mark.",
     type: "video",
     path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
     format: "video/webm",
@@ -50,7 +51,7 @@ const features = [
     description:
       "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
     type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+    path: "/app/writer-hero-2.jpg",
     alt: "A computer",
     svg: (
       <svg
@@ -216,9 +217,9 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          All you need to ship your startup fast
+          All you need to write your first draft, fast
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            and get profitable
+            and be inspired
           </span>
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">

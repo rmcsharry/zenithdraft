@@ -3,12 +3,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "ShipFast",
+  appName: "ZenithBox",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app.",
+    "The leading draft creator for long-form content, novels, screenplays, essays and more.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "shipfa.st",
+  domainName: process.env.NODE_ENV === "development" ? "localhost:3001" : "zenithbox.com",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "",
@@ -27,18 +27,19 @@ const config = {
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Starter",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Perfect for getting started",
         // The price you want to display, the one user will be charged on Stripe.
         price: 99,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
         priceAnchor: 149,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Fully guided writing",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "AI research assistant" },
+          { name: "AI powered suggestions" },
+          { name: "5 drafts per month (max 100,000 words)" },
+          { name: "$0.02 per extra 1,000 words" },
         ],
       },
       {
@@ -54,13 +55,12 @@ const config = {
         priceAnchor: 299,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Fully guided writing",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "AI research assistant" },
+          { name: "AI powered suggestions" },
+          { name: "Unlimited drafts (max 1m words)" },
+          { name: "$0.01 per extra 1,000 words" },
         ],
       },
     ],
