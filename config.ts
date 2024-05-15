@@ -3,12 +3,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "ZenithBox",
+  appName: "ZenithDraft",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "The leading draft creator for long-form content, novels, screenplays, essays and more.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: process.env.NODE_ENV === "development" ? "localhost:3001" : "zenithbox.com",
+  domainName: process.env.NODE_ENV === "development" ? "localhost:3001" : "zenithdraft.com",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "",
