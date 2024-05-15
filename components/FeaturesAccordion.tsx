@@ -47,11 +47,11 @@ const features = [
     ),
   },
   {
-    title: "Payments",
+    title: "Draft Editor",
     description:
-      "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
+      "Our editor is designed to help you focus on writing, with a clean interface and a set of tools to help you write faster.",
     type: "image",
-    path: "/app/writer-hero-2.jpg",
+    path: "/editing-icons.jpg",
     alt: "A computer",
     svg: (
       <svg
@@ -71,9 +71,9 @@ const features = [
     ),
   },
   {
-    title: "Authentication",
+    title: "Instant rephraser",
     description:
-      "Magic links setup, login with Google walkthrough, save user in MongoDB/Supabase, private/protected pages & API calls",
+      "Instantly rephrase your writing to make it more readable and engaging. Our AI will help you find the right words.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -92,9 +92,9 @@ const features = [
     ),
   },
   {
-    title: "Style",
+    title: "Focus on quality",
     description:
-      "Components, animations & sections (like this features section), 20+ themes with daisyUI, automatic dark mode",
+      "Unlike most AI driven writing tools, we focus on quality over quantity. Our system uses a properitary, patented algorithm to ensure your writing is of the highest quality.",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ const Item = ({
 // Video are set to autoplay for best UX.
 const Media = ({ feature }: { feature: Feature }) => {
   const { type, path, format, alt } = feature;
-  const style = "rounded-2xl aspect-square w-full sm:w-[26rem]";
+  const style = "rounded-2xl w-full sm:w-[26rem]";
   const size = {
     width: 500,
     height: 500,

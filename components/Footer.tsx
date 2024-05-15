@@ -18,16 +18,16 @@ const Footer = () => {
               className="flex gap-2 justify-center md:justify-start items-center"
             >
               <Image
-                src={logo}
+                src="/logoAndName.png"
                 alt={`${config.appName} logo`}
+                
                 priority={true}
-                className="w-6 h-6"
-                width={24}
-                height={24}
+                width={160}
+                height={32}
               />
-              <strong className="font-extrabold tracking-tight text-base md:text-lg">
+              {/* <strong className="font-extrabold tracking-tight text-base md:text-lg">
                 {config.appName}
-              </strong>
+              </strong> */}
             </Link>
 
             <p className="mt-3 text-sm text-base-content/80">

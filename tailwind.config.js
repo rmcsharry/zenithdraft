@@ -63,6 +63,20 @@ module.exports = {
     // You can add another theme among the list of 30+
     // Add "data-theme='theme_name" to any HTML tag to enable the 'theme_name' theme.
     // https://daisyui.com/
-    themes: ["cmyk", "dark"],
+      themes: [
+        {
+          zenithLight: {
+            "primary": "#501F3A",
+            "secondary": "#14A098",
+            "accent": "#CBB3BF",
+            "neutral": "#CBB3BF",
+            "base-100": "#FFFFFF",
+            "info": "#0ea5e9",
+            "success": "#14b8a6",
+            "warning": "#eab308",
+            "error": "#CB2D6F",
+          },
+        },
+      ],
   },
 };
