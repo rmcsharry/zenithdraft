@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Inter } from "next/font/google";
+import { Cormorant_Infant, Sorts_Mill_Goudy} from "next/font/google";
 import { Viewport } from "next";
 import PlausibleProvider from "next-plausible";
 import { getSEOTags } from "@/libs/seo";
@@ -7,7 +7,16 @@ import ClientLayout from "@/components/LayoutClient";
 import config from "@/config";
 import "./globals.css";
 
-const font = Inter({ subsets: ["latin"] });
+const cormorantInfant = Cormorant_Infant({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'], 
+  variable: '--font-cormorant-infant',
+});
+const sortsMillGoudy = Sorts_Mill_Goudy({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-sorts-mill-goudy',
+});
 
 export const viewport: Viewport = {
   // Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
@@ -22,7 +31,7 @@ export const metadata = getSEOTags();
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" data-theme={config.colors.theme} className={font.className}>
+    <html lang="en" data-theme={config.colors.theme} className={`${sortsMillGoudy.variable} ${cormorantInfant.variable} `}>
       {config.domainName && (
         <head>
           <PlausibleProvider domain={config.domainName} />

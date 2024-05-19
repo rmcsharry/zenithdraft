@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "cormorant-infant": "var(--font-cormorant-infant)", // note: you can call the left side of this whatever you want - title-font or foo-bar, this is what you'll use in your Tailwind css classes to use this font
+        "inter": "var(--font-inter)", // note: the bit that goes inside the var() function is the same variable name we defined in app.tsx
+      },
       backgroundImage: {
         gradient:
           "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)",
