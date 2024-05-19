@@ -1,6 +1,7 @@
 import Image from "next/image";
 import config from "@/config";
 import writerHero2 from "@/app/writer-hero-2.jpg";
+import ButtonLead from '@/components/ButtonLead';
 
 const CTA = () => {
   return (
@@ -21,12 +22,10 @@ const CTA = () => {
             Don&apos;t waste time. Kill your writers block today!
           </p>
 
-          <button className="btn btn-primary btn-wide">
+          {/* <button className="btn btn-primary btn-wide">
             Get {config.appName}
-          </button>
-          <button className="btn btn-primary btn-wide">
-            Get {config.appName}
-          </button>
+          </button> */}
+          <ButtonLead />
         </div>
       </div>
     </section>

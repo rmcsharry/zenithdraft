@@ -24,10 +24,10 @@ const Hero = () => {
         </a>
 
         <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4">
-          Write your first draft today
+          Write your first draft fast
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          All you need to turn your ideas into complete first drafts quickly and easily. Go from start to draft today!
+          All you need to turn your ideas into complete first drafts quickly and easily. Go from start to draft fast!
         </p>
 
         <ButtonLead />

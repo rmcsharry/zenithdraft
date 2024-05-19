@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <header className="bg-black text-white">
       <nav
-        className="container flex items-center justify-between px-8 py-4 mx-auto"
+        className="container max-w-7xl flex items-center justify-between px-8 py-4 mx-auto min-h-[80px]"
         aria-label="Global"
       >
         {/* Your logo/name on large screens */}
@@ -103,7 +103,7 @@ const Header = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        <div className="hidden lg:flex lg:justify-end lg:flex-1"></div>
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
@@ -168,7 +168,7 @@ const Header = () => {
             </div>
             <div className="divider"></div>
             {/* Your CTA on small screens */}
-            <div className="flex flex-col">{cta}</div>
+            {/* <div className="flex flex-col">{cta}</div> */}
           </div>
         </div>
       </div>
