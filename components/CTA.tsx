@@ -24,6 +24,9 @@ const CTA = () => {
           <button className="btn btn-primary btn-wide">
             Get {config.appName}
           </button>
+          <button className="btn btn-primary btn-wide">
+            Get {config.appName}
+          </button>
         </div>
       </div>
     </section>
